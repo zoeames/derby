@@ -1,7 +1,7 @@
 ## name of project
 ### Code Badges
-build status icon
-coverage status icon
+[![Build Status](https://travis-ci.org/zoeames/derby.svg)](https://travis-ci.org/zoeames/derby)
+[![Coverage Status](https://coveralls.io/repos/zoeames/derby/badge.png)](https://coveralls.io/r/zoeames/derby)
 
 ### About
 write a description about your project
