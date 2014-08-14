@@ -1,0 +1,12 @@
+.gambler()
+  .photo(style='background-image:url(#{gambler.photo});')
+  .name= gambler.name
+  .cash Cash Available: $ #{gambler.cash}
+  .results Wins: #{gambler.results.wins}, Losses: #{gambler.results.losses}
+  .spouse Spouse: #{gambler.spouse.name}
+  .spousePhoto(style='background-image:url(#{gambler.spouse.photo});')
+  .assets ASSETS
+     each asset in gambler.assets
+       .assetName= asset.name
+       .assetValue Value: $ #{asset.value}
+       .assetPhoto(style='background-image:url(#{asset.photo});')
