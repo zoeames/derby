@@ -37,5 +37,24 @@ describe('Gambler', function(){
       });
     });
   });
+
+  describe('.findById', function(){
+    it('should find a Gambler by their id', function(done){
+      Gambler.findById('000000000000000000000001', function(err, gambler){
+        expect(gambler.name).to.equal('Bob Jones');
+        done();
+      });
+    });
+  });
+
+
+  describe('.save', function(){
+    it('should save Gambler to the ', function(done){
+      Gambler.all(function(err, gamblers){
+        expect(gamblers).to.have.length(3);
+        done();
+      });
+    });
+  });
 });
 
