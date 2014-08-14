@@ -1,0 +1,27 @@
+{
+  "name":"Bob Jones",
+  "photo":"http://slog.thestranger.com/files/2007/11/doggie.jpg",
+  "spouse":{"name":"Sarah Jones", "photo":"http://th06.deviantart.net/fs70/PRE/f/2012/356/e/7/white_trash_by_scartissuesoul-d5ot939.jpg"},
+  "cash":1000,
+  "assets":[{"name":"ring", "photo":"http://www.houstondiamondoutlet.com/images/diamond_rings.jpg", "value":5000},{"name":"car", "photo":"http://redstatereport.com/wp-content/uploads/2013/11/car.jpg", "value":5000}, {"name":"house", "photo":"http://media-cdn.tripadvisor.com/media/photo-s/02/b0/db/cc/filename-img-5002-jpg.jpg", "value":100000}],
+  "results":{"wins":5 ,"losses":3}
+}
+
+{
+  "name":"Rick Johnson",
+  "photo":"http://spideronlinemarketing.com/wp-content/uploads/2013/06/tim-leigh1.jpg",
+  "spouse":{"name":"Holly Johnson", "photo":"http://0.tqn.com/d/dating/1/S/g/2/-/-/trophy_wife.jpg"},
+  "cash":1000000,
+  "assets":[{"name":"ring", "photo":"http://divasandweddings.com/wp-content/uploads/2013/01/Huge-Diamond-Wedding-Rings-Ideas.jpg", "value":100000},{"name":"car", "photo":"http://srv2.betterparts.org/images/bugatti-veyron-grand-sport-vitesse-02.jpg", "value":26000000}, {"name":"house", "photo":"http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2013/08/26/100987825-121017_EJ_stone_mansion_0014r.530x298.jpg?v=1395082652", "value":259000000}],
+  "results":{"wins":5 ,"losses":15}
+}
+
+{
+  "name":"Granny Smith",
+  "photo":"http://calvinayreap.com/wp-content/uploads/2010/06/granny-gambler.jpg",
+  "spouse":{"name":"Billy Bob Smith", "photo":"http://images.sodahead.com/polls/003127913/5031445847_tumblr_lqqpqpxdrb1qer96ro1_500_xlarge.jpeg"},
+  "cash":100000,
+  "assets":[{"name":"fannypack", "photo":"http://thumbs4.ebaystatic.com/d/l225/m/mdysWh1GrSVgW4N363f_tjw.jpg", "value":50},{"name":"bus pass", "photo":"http://myworldreviews.com/reviews/The_Deuce_Las_Vegas_Bus-116/figurebig-390.jpg", "value":100}, {"name":"grandkids", "photo":"http://blog.solsticecommunities.com/wp-content/uploads/2013/08/Helping-With-The-Grandkids.jpg", "value":100000000}],
+  "results":{"wins":15 ,"losses":1}
+}
+
