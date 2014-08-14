@@ -1,12 +1,14 @@
-.gambler()
+.gambler(data-gambler-id=gambler._id.toString())
   .photo(style='background-image:url(#{gambler.photo});')
   .name= gambler.name
-  .cash Cash Available: $ #{gambler.cash}
+  .cash Cash Available: $ #{gambler.cash.toFixed(2)}
   .results Wins: #{gambler.results.wins}, Losses: #{gambler.results.losses}
   .spouse Spouse: #{gambler.spouse.name}
   .spousePhoto(style='background-image:url(#{gambler.spouse.photo});')
-  .assets ASSETS
+  .assets ASSETS:
      each asset in gambler.assets
-       .assetName= asset.name
-       .assetValue Value: $ #{asset.value}
-       .assetPhoto(style='background-image:url(#{asset.photo});')
+       .asset
+         .photo(style='background-image:url(#{asset.photo});')
+           .info
+             .name= asset.name
+             .value $ #{asset.value.toFixed(2)}
