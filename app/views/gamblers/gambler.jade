@@ -1,14 +1,22 @@
 .gambler(data-gambler-id=gambler._id.toString())
-  .photo(style='background-image:url(#{gambler.photo});')
+  .photo(style='background-image:url("#{gambler.photo}");')
   .name= gambler.name
-  .cash Cash Available: $ #{gambler.cash.toFixed(2)}
-  .results Wins: #{gambler.results.wins}, Losses: #{gambler.results.losses}
-  .spouse Spouse: #{gambler.spouse.name}
-  .spousePhoto(style='background-image:url(#{gambler.spouse.photo});')
-  .assets ASSETS:
-     each asset in gambler.assets
-       .asset
-         .photo(style='background-image:url(#{asset.photo});')
-           .info
-             .name= asset.name
-             .value $ #{asset.value.toFixed(2)}
+  .cash $#{gambler.cash.toFixed(2)}
+  .results
+    span.wins Wins: #{gambler.results.wins},
+    span.losses Losses: #{gambler.results.losses}
+  if gambler.assets.length
+    .spouse
+      .photo(style='background-image:url("#{gambler.spouse.photo}");')
+      .name= gambler.spouse.name
+  .assets
+    button.newAssetButton Add Asset
+    a(href='/gamblers/#{gambler._id}/assets/new') Add Asset
+    button.newAssetButton Add Asset
+    each asset in gambler.assets
+      .asset
+        .photo(style='background-image:url("#{asset.photo}");')
+          .info
+            .name= asset.name
+            .value $#{asset.value.toFixed(2)}
+
